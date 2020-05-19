@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(fondo2.jpg);
+    background-attachment: fixed;
+}
+
+img {
+    width: 100%;
+    height: 85px;
+    margin: auto;
+    padding: 3px;
+}
+
+.caja-vacia {
+    width: 130px;
+    height: 85px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px #d8d8d8;
+    border: 1px solid gray;
+    padding: 0;
+    overflow: hidden;
+}
+
+#contenedor-general {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+}
+
+#contenedor-principal {
+    box-shadow: 0 0 10px gray;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 10px auto;
+    max-width: 800px;
+    background: #FFFFFF;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+#contenedor-exito {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #FFFFFF;
+    z-index: 2000;
+}
+
+.mono {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    box-shadow: none;
+}
+
+.caja {
+    border: 1px solid gray;
+}

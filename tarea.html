@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="letra.jpg">
+    <title>Sandra Ardila - Juego Física</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="contenedor-exito">
+        <h1 class="text-center my-5">¡¡¡FELICITACIONES!!!</h1>
+        <h1 class="text-center my-5">Lograste realizar el ejercicio correctamente</h1>
+        <h1 class="text-center my-5">
+            <img src="mono.gif" alt="" class="mono">
+        </h1>
+    </div>
+    <div id="contenedor-general">
+        <div id="contenedor-principal">
+
+            <!--Datos -->
+            <!--Datos -->
+            <div class="container text-center">
+                <h1 class="text-dark text-center"><strong>Juego de Cálculo diferencial</strong></h1>
+                <h4><strong class="text-dark">Derivadas</strong></h4>
+                <small class="text-dark text-center">Sandra Ardila Torres</small>
+
+            </div>
+
+            <div class="container text-justify my-5">
+                <p>
+                    El juego consiste en arrastrar y soltar la imagen de la ecuación encima del cuadro cuyo nombre coincida con la ecuación, una vez completado puedes dar click en el botón que aparece en la parte de abajo de la pantalla para confirmar si lo has realizado
+                    correctamente.
+                </p>
+            </div>
+            <!--Campos-->
+            <!--Campos-->
+            <div class="row mt-5">
+                <div id="contenedor1" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen1" src="ecuaciones/5.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c1" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>1. Derivada arcocoseno</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="contenedor2" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen2" src="ecuaciones/4.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c2" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>2. Derivada arcosecante</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="contenedor3" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen3" src="ecuaciones/1.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c3" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>3. Derivada arcotangente</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="contenedor4" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen4" src="ecuaciones/7.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c4" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>4. Derivada de contangente</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="contenedor5" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen5" src="ecuaciones/2.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c5" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>5. Derivada de la consecante</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor6" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen6" src="ecuaciones/3.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c6" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>6. Derivada de la secante</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor7" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen7" src="ecuaciones/8.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c7" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>7. Derivada de un logaritmo</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor8" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen8" src="ecuaciones/6.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c8" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>8. Derivada de una potencia</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor9" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen9" src="ecuaciones/11.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c9" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>9. Derivada de una raiz</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor10" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen10" src="ecuaciones/13.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c10" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>10. Derivada del arcoseno</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor11" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen11" src="ecuaciones/10.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c11" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>11. Derivada del coseno</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor12" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen12" src="ecuaciones/14.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c12" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>12. Derivada del seno</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor13" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen13" src="ecuaciones/9.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c13" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>13. Derivada exponencial base e</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor14" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen14" src="ecuaciones/12.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c14" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>14. Derivada exponencial</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor15" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen15" src="ecuaciones/16.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c15" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>15. Derivada raiz cuadrada</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor16" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen16" src="ecuaciones/17.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c16" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>16. Derivada tangente</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="contenedor17" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="col-2 caja p-0 offset-1">
+                    <img id="imagen17" src="ecuaciones/15.png" class="p-0 m-0" alt="" draggable="true" ondragstart="arrastrar(event)">
+                </div>
+                <div id="c17" class="col-2 offset-2  caja-vacia " ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+                <div class="col-3">
+                    <p>17. Logaritmo neperiano</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="fixed-bottom bg-dark py-2">
+        <div class="text-center">
+            <button class="boton btn btn-success" onclick="comprobar()">Comprobar</button>
+        </div>
+        <div class="text-center text-white">
+            &copy;2020 - Sandra Ardila Torres - Todos los derechos reservados
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="arrastrar.js"></script>
+
+</body>
+
+</html>
