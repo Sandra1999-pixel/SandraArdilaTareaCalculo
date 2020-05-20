@@ -1,5 +1,3 @@
-$("#contenedor-exito").hide();
-
 function permitirSoltar(ev) {
     ev.preventDefault();
     //document.getElementById("caja2").classList.add("detectar")
@@ -16,7 +14,6 @@ function soltar(ev) {
 }
 
 function comprobar() {
-
     var i1 = document.querySelector("#imagen1").parentElement.id;
     var i2 = document.querySelector("#imagen2").parentElement.id;
     var i3 = document.querySelector("#imagen3").parentElement.id;
@@ -35,7 +32,7 @@ function comprobar() {
     var i16 = document.querySelector("#imagen16").parentElement.id;
     var i17 = document.querySelector("#imagen17").parentElement.id;
 
-    if (i1 == "c5" && i2 == "c4" && i3 == "c1" && i4 == "c7" && i5 == "c2" && i6 == "c3" && i7 == "c8" && i8 == "c6" && i9 == "c11" && i10 == "c13" && i11 == "c10" && i12 == "c14" && i13 == "c9" && i14 == "c12" && i15 == "c16" && i16 == "c17" && i17 == "c15") {
+    if (i1 == "c3" && i2 == "c5" && i3 == "c6" && i4 == "c2" && i5 == "c1" && i6 == "c8" && i7 == "c4" && i8 == "c7" && i9 == "c13" && i10 == "c11" && i11 == "c9" && i12 == "c14" && i13 == "c10" && i14 == "c12" && i15 == "c17" && i16 == "c15" && i17 == "c16") {
         //alert("Ejercicio completado con éxito");
         $("#contenedor-exito").show();
     } else {
