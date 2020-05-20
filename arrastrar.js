@@ -4,7 +4,7 @@ $(document).ready(function() {
     setTimeout(
         function() {
             $("#contenedor-loading").hide();
-        }, 5000);
+        }, 500);
 
 });
 
