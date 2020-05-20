@@ -1,3 +1,13 @@
+$(document).ready(function() {
+    $("#contenedor-exito").hide();
+
+    setTimeout(
+        function() {
+            $("#contenedor-loading").hide();
+        }, 5000);
+
+});
+
 function permitirSoltar(ev) {
     ev.preventDefault();
     //document.getElementById("caja2").classList.add("detectar")
